@@ -6,11 +6,11 @@ Causes BSOD in Windows without admin privileges.
 
 ```
 kill-windows/
-  src/
+  src/                                                            # Source files
     C#/                                                           # C# Implementation
-      Program.cs                                                  # Source file
+      Program.cs                                                  
     C++/                                                          # C++ Implementation
-      main.cpp                                                    # Source file
+      main.cpp
   builds/
     killwindows-cpp.exe                                           # C++ compiled binary
     killwindows-cs.exe                                            # C# compiled binary
