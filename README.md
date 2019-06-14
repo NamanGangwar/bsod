@@ -7,12 +7,12 @@ Causes BSOD in Windows without admin privileges.
 ```
 kill-windows/
   src/
-    C#/									        # C# Implementation
-      Program.cs						    # Source file
-    C++/								        # C++ Implementation
-      main.cpp							    # Source file
+    C#/                         # C# Implementation
+      Program.cs                # Source file
+    C++/                        # C++ Implementation
+      main.cpp                  # Source file
   builds/
-    killwindows-cpp.exe					# C++ compiled binary
-    killwindows-cs.exe					# C# compiled binary
-  README.md								      # README file
+    killwindows-cpp.exe         # C++ compiled binary
+    killwindows-cs.exe          # C# compiled binary
+  README.md                     # README file
 ```
